@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Management System</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h2>CRUDS</h2>
+      <p>Product Management System</p>
+    </div>
+
+    <div class="form-section">
+      <input type="text" placeholder="Title" id="title" />
+
+      <div class="pricing-box">
+        <input type="number" placeholder="Price" id="price" />
+        <input type="number" placeholder="Taxes" id="taxes" />
+        <input type="number" placeholder="Ads" id="ads" />
+        <input type="number" placeholder="Discount" id="discount" />
+        <small>Total: <span id="total">0</span></small>
+      </div>
+
+      <input type="number" placeholder="Count" id="count" />
+      <input type="text" placeholder="Category" id="category" />
+      <button id="summit">Create</button>
+    </div>
+
+    <div class="search-section">
+      <input type="text" placeholder="Search" id="search" />
+      <div class="search-buttons">
+        <button id="searchTitle">Search By Title</button>
+        <button id="searchCategory">Search By Category</button>
+      </div>
+    </div>
+
+    <button id="deleteAll" style="display: none;">Delete All</button>
+  </div>
+
+  <div class="table-wrapper">
+    <table id="productsTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Taxes</th>
+          <th>Ads</th>
+          <th>Discount</th>
+          <th>Category</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

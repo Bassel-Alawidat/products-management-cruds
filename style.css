@@ -1,0 +1,147 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #f7ca18;
+}
+.title p {
+  color: #ccc;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
+input:focus {
+  outline: 2px solid #f7ca18;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f7ca18;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #ffd700;
+}
+
+/* Pricing box */
+.pricing-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.pricing-box small {
+  grid-column: span 4;
+  color: #0f0;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Search section */
+.search-section {
+  margin: 20px 0;
+}
+.search-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.search-buttons button {
+  flex: 1;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+table thead {
+  background-color: #f7ca18;
+  color: #000;
+}
+table th, table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+table tbody tr:hover {
+  background-color: #222;
+}
+
+/* Action buttons */
+.action-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 0 3px;
+}
+.edit {
+  background-color: #3498db;
+  color: white;
+}
+.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pricing-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .search-buttons {
+    flex-direction: column;
+  }
+}
