@@ -9,6 +9,13 @@ It allows users to Create, Read, Update, and Delete products with data stored pe
 
 ---
 
+## 🔗 Live Demo (GitHub Pages)
+
+You can try the live version of the project here:  
+👉 [https://bassel-alawidat.github.io/products-management-cruds/](https://bassel-alawidat.github.io/products-management-cruds/)
+
+---
+
 ## 🚀 Features
 
 - 🧮 Automatic total price calculation (Price + Taxes + Ads - Discount)  
